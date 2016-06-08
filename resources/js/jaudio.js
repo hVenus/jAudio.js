@@ -68,7 +68,12 @@
       self.updateTotalTime();
       self.events();
       self.debug();
-      self.domAudio.volume = 0.05
+      self.domAudio.volume = 0.05;
+
+      if(self.settings.autoPlay){
+        self.play();
+      }
+
     },
 
     play: function()
